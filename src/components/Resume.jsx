@@ -6,6 +6,8 @@ function Resume() {
       <div className="max-w-5xl mx-auto py-10">
         <h1 className="text-2xl sm:text-4xl font-bold">Resume</h1>
         <div className="mt-8 space-y-12">
+          {/* resume template */}
+          <div className="bg-[url('/img/cv.png')] mx-auto h-[400px] w-[90%] bg-contain bg-no-repeat"></div>
           {/* Work Experience */}
           <div className="border-b pb-8">
             <h1 className="text-lg sm:text-xl font-bold mb-4">Work Experience</h1>
@@ -20,18 +22,6 @@ function Resume() {
                     <li>Implementing user authentication, real-time features (Socket.io), and payment integrations.</li>
                     <li>Testing and debugging APIs using Postman to ensure smooth backend operations.</li>
                     <li>Collaborating with the team to improve UI/UX and optimize system performance.</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                <h1 className="w-full sm:w-1/3 font-semibold text-sm sm:text-base">Jan 2022 - Oct 2022</h1>
-                <div>
-                  <h1 className="text-base sm:text-lg font-bold">Raw Material Supervisor</h1>
-                  <h1 className="text-base sm:text-lg font-bold">GoodDay PaperMill</h1>
-                  <ul className="list-disc list-inside font-light text-sm sm:text-base">
-                    <li>Ensured raw materials were readily available for production.</li>
-                    <li>Calculated the output of each delivered raw material to reduce waste.</li>
-                    <li>Collaborated with sales teams to create effective sales collateral.</li>
                   </ul>
                 </div>
               </div>

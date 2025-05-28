@@ -14,6 +14,12 @@ function Projects() {
               link: 'https://bookvialajo.vercel.app/'
             },
             {
+              title: 'MBIFEDERA',
+              description: '',
+              imgSrc: '/img/mbi.png',
+              link: 'https://mbispace.com/'
+            },
+            {
               title: 'StarTech',
               description: 'StarTech is an e-commerce application based solely on the sales of shoes. Users can make orders, add to cart, and pay for them on the app, and it will be delivered to the designated location filled in by the user.',
               imgSrc: '/img/startech.jpg',
@@ -28,7 +34,7 @@ function Projects() {
           ].map((project, index) => (
             <div key={index} className='flex flex-col sm:flex-row items-center sm:justify-between gap-6'>
               <div className='w-full sm:w-1/2 space-y-4'>
-                <h1 className='text-xl sm:text-3xl font-bold'>{project.title}</h1>
+                <h1 className='text-xl sm:text-3xl font-bold text-yellow-600'>{project.title}</h1>
                 <p className='font-light text-sm sm:text-base'>{project.description}</p>
               </div>
               <div className='w-full sm:w-1/2'>

@@ -3,20 +3,41 @@ import { Link } from "react-router-dom";
 
 function AboutMe() {
   return (
-    <div className="h-screen">
-      <div className=" w-[70%] mx-auto flex m-[5%]">
-        <div className="w-[50%]">
+    <div className="font-sans text-gray-800 bg-gray-900">
+
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white py-16 px-6 lg:w-[80%] mx-auto">
+        <div className="md:w-1/2 text-center md:text-left">
+          <p className="text-lg">MY NAME IS</p>
+          <h2 className="text-4xl font-bold">FRANKLIN</h2>
+          <button className="mt-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded">
+            I'M FULLSTACK WEB DEVELOPER
+          </button>
+        </div>
+        <div className="md:w-1/2 mt-8 md:mt-0">
           <img
-            src="/img/profilepic.jpg"
-            alt=""
-            className="w-[500px] h-[500px] rounded-[100%]"
+            src="/img/profilepic.jpg" // replace with actual image path
+            alt="Franklin"
+            className="w-full max-w-sm rounded shadow-lg"
           />
         </div>
-        <div className="w-[50%] flex flex-col justify-center p-[20px]">
-          <h1 className="text-[100px]">Hello</h1>
-          <h3 className="font-bold text-lg">A Bit About Me</h3>
-          <p className="font-light">
-            I am a FullStack web devloper with my main focus on Javascript and
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 bg-gray-100">
+        <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto">
+          <div className="md:w-1/2 relative">
+            <div className="absolute top-2 left-2 w-full h-full bg-black z-0" />
+            <img
+              src="/img/profilepic.jpg" // replace with actual image path
+              alt="Franklin"
+              className="relative z-10 w-full max-w-sm"
+            />
+          </div>
+          <div className="md:w-1/2 mt-8 md:mt-0 md:ml-12">
+            <p className="text-sm uppercase tracking-wider">who am i</p>
+            <h3 className="text-2xl font-bold text-yellow-500 mb-4">HELLO</h3>
+            <p>I am a FullStack web devloper with my main focus on Javascript and
             its frameworks which I use for my frontend and others. I have a B.sc
             in Computer Science and can also be described as a Results-driven
             Junior Web Developer with expertise in React.js, Node.js,
@@ -24,33 +45,10 @@ function AboutMe() {
             applications, managing databases, and implementing authentication
             and real-time features. Currently honing skills while exploring
             cybersecurity and freelancing. Adaptable, quick learner, and
-            committed to delivering efficient solutions.
-          </p>
-          <div className="flex space-x-4 m-[10px]">
-            <Link
-              to={`/resume`}
-              className="h-[150px] w-[150px] rounded-[100%] border-[1px] border-black text-center text-lg text-bold flex flex-col justify-center bg-red-700 hover:bg-red-400"
-            >
-              {" "}
-              Resume
-            </Link>
-            <Link
-              to={`/projects`}
-              className="h-[150px] w-[150px] rounded-[100%] border-[1px] border-black text-center text-lg text-bold flex flex-col justify-center bg-teal-700 hover:bg-teal-400"
-            >
-              {" "}
-              Portfolio
-            </Link>
-            <Link
-              to={`/contact`}
-              className="h-[150px] w-[150px] rounded-[100%] border-[1px] border-black text-center text-lg text-bold flex flex-col justify-center bg-yellow-400 hover:bg-yellow-700"
-            >
-              {" "}
-              Contact
-            </Link>
+            committed to delivering efficient solutions.</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
