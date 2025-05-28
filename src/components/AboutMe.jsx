@@ -11,7 +11,7 @@ function AboutMe() {
           <p className="text-lg">MY NAME IS</p>
           <h2 className="text-4xl font-bold">FRANKLIN</h2>
           <button className="mt-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded">
-            I'M FULLSTACK WEB DEVELOPER
+            I'M A FULLSTACK WEB DEVELOPER
           </button>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
