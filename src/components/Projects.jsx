@@ -8,6 +8,12 @@ function Projects() {
         <div className='mt-12 space-y-16'>
           {[
             {
+              title: 'LajoSpaces',
+              description: 'LajoSpaces is a real estate application that allows users to view and book properties for sale or rent. Users are also allowed to put their own spaces or properties for sale to get good roommates',
+              imgSrc: '/img/lajospaces_.jpg',
+              link: 'https://lajospaces.vercel.app/'
+            },
+            {
               title: 'BookViaLajo',
               description: 'BookViaLajo is a hotel booking application much like Booking.com in which logged-in users can reserve and book available rooms in hotels through the application.',
               imgSrc: '/img/bookvialajo.jpg',
