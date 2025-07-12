@@ -5,7 +5,13 @@ export default {
     extend: {
       screens:{
         "xs": "200px"
+      },
+      colors:{
+        'baseColor': "#080d1ffe"
       }
+    },
+    fontFamily:{
+      'Lora': ['Lora', 'sans']
     },
   },
   plugins: [],

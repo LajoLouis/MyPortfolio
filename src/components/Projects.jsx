@@ -38,21 +38,22 @@ function Projects() {
               link: ''
             }
           ].map((project, index) => (
-            <div key={index} className='flex flex-col sm:flex-row items-center sm:justify-between gap-6'>
+            <a href={project.link} target='_blank' rel='noopener noreferrer' key={index} >
+              <div  className='flex flex-col sm:flex-row items-center sm:justify-between gap-6'>
               <div className='w-full sm:w-1/2 space-y-4'>
                 <h1 className='text-xl sm:text-3xl font-bold text-yellow-600'>{project.title}</h1>
                 <p className='font-light text-sm sm:text-base'>{project.description}</p>
               </div>
               <div className='w-full sm:w-1/2'>
                 {project.link ? (
-                  <a href={project.link} target='_blank' rel='noopener noreferrer'>
-                    <img src={project.imgSrc} alt={project.title} className='w-full rounded-lg shadow-md' />
-                  </a>
+                    <img src={project.imgSrc} alt={project.title} className='w-full rounded-lg shadow-md mb-[50px]' />
+                  
                 ) : (
                   <img src={project.imgSrc} alt={project.title} className='w-full rounded-lg shadow-md' />
                 )}
               </div>
             </div>
+            </a>
           ))}
         </div>
       </div>
