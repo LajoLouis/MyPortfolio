@@ -10,7 +10,7 @@ import Framer from "./components/Framer";
 function App() {
   return (
     <>
-      <div className="bg-baseColor text-white m-0 p-0 font-Lora">
+      <div className="bg-baseColor text-white m-0 p-0 font-Lora relative">
         <Router>
           <Header />
           <Routes>

@@ -36,7 +36,7 @@ function AboutMe() {
             <img
               src="/img/profilepic.jpg" // replace with actual image path
               alt="Franklin"
-              className="relative z-10 w-full max-w-sm"
+              className="relative z-[2] w-full max-w-sm"
             />
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 md:ml-12">
