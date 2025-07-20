@@ -18,25 +18,25 @@ function Header() {
         </RouterLink>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="resume" smooth={true} duration={500} className="hover:text-yellow-400 block py-2">
+        <Link to="resume" smooth={true} duration={2000} className="hover:text-yellow-400 block py-2">
           RESUME
         </Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="projects" smooth={true} duration={500}  className="hover:text-yellow-400 block py-2">
+        <Link to="projects" smooth={true} duration={2000}  className="hover:text-yellow-400 block py-2">
           PROJECTS
         </Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <RouterLink to="/contact" className="hover:text-yellow-400 block py-2">
+        <Link to="contact" smooth={true} duration={2000} className="hover:text-yellow-400 block py-2">
           CONTACT
-        </RouterLink>
+        </Link>
       </motion.div>
     </>
   );
 
   return (
-    <header className="bg-black text-white px-6 py-4 sticky top-0 z-10">
+    <header className="bg-black text-white px-6 py-4 sticky top-0 z-10 bg-opacity-80">
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold text-yellow-600">FRANKLIN</h1>
 

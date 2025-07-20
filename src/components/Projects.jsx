@@ -88,30 +88,39 @@ function Projects() {
             </p>
             <div className="flex space-x-2 flex-wrap justify-around gap-3">
               <button className="bg-white text-black p-[5px] space-x-1 rounded-sm flex items-center font-bold">
-              <span className="flex items-center"><FaReact/> + <SiTypescript/></span> <span className="space-x-2">React + Typescript</span>
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <RiTailwindCssFill/> Tailwindcss
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiExpress/> Express
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiMongodb/> MongoDb
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiShadcnui/> Shadcnui
-            </button>
+                <span className="flex items-center">
+                  <FaReact /> + <SiTypescript />
+                </span>{" "}
+                <span className="space-x-2">React + Typescript</span>
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <RiTailwindCssFill /> Tailwindcss
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiExpress /> Express
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiMongodb /> MongoDb
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiShadcnui /> Shadcnui
+              </button>
             </div>
-            <button className="bg-white text-black p-[5px] rounded-sm">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.4, ease: "easeIn" }}
+              className="bg-white text-black p-[5px] rounded-sm"
+            >
               <a
                 href="https://lajospaces.vercel.app/"
                 className="flex items-center font-bold"
+                target="_blank"
               >
                 <TbWorld />
                 View Project
               </a>
-            </button>
+            </motion.button>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -130,29 +139,35 @@ function Projects() {
               in which logged-in users can reserve and book available rooms in
               hotels through the application.
             </p>
-            <div className="flex space-x-2 flex-wrap justify-around gap-3-y-3">
+            <div className="flex space-x-2 flex-wrap justify-around gap-3">
               <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <FaReact/> React
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <RiTailwindCssFill/> Tailwindcss
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiExpress/> Express
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiMongodb/> MongoDb
-            </button>
+                <FaReact /> React
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <RiTailwindCssFill /> Tailwindcss
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiExpress /> Express
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiMongodb /> MongoDb
+              </button>
             </div>
-            <button className="bg-white text-black p-[5px] rounded-sm">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.4, ease: "easeIn" }}
+              className="bg-white text-black p-[5px] rounded-sm"
+            >
               <a
                 href="https://bookvialajo.vercel.app/"
                 className="flex items-center font-bold"
+                target="_blank"
               >
                 <TbWorld />
                 View Project
               </a>
-            </button>
+            </motion.button>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -166,18 +181,22 @@ function Projects() {
               alt=""
               className="md:h-[300px] xs:h-[200px] w-[90%] mx-auto"
             />
-            <p>
-              
-            </p>
-            <button className="bg-white text-black p-[5px] rounded-sm">
+            <p></p>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.4, ease: "easeIn" }}
+              className="bg-white text-black p-[5px] rounded-sm"
+            >
               <a
                 href="https://mbispace.com/"
                 className="flex items-center font-bold"
+                target="_blank"
               >
                 <TbWorld />
                 View Project
               </a>
-            </button>
+            </motion.button>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -192,32 +211,41 @@ function Projects() {
               className="md:h-[300px] xs:h-[200px] w-[90%] mx-auto"
             />
             <p>
-              StarTech is an e-commerce application based solely on the sales of shoes. Users can make orders, add to cart, and pay for them on the app, and it will be delivered to the designated location filled in by the user.
+              StarTech is an e-commerce application based solely on the sales of
+              shoes. Users can make orders, add to cart, and pay for them on the
+              app, and it will be delivered to the designated location filled in
+              by the user.
             </p>
-            <div className="flex space-x-2 flex-wrap justify-around gap-3-y-3">
+            <div className="flex space-x-2 flex-wrap justify-around gap-3">
               <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <FaReact/> React
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <RiTailwindCssFill/> Tailwindcss
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiExpress/> Express
-            </button>
-            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
-              <SiMongodb/> MongoDB
-            </button>
+                <FaReact /> React
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <RiTailwindCssFill /> Tailwindcss
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiExpress /> Express
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiMongodb /> MongoDB
+              </button>
             </div>
             <div>
-              <button className="bg-white text-black p-[5px] rounded-sm">
-              <a
-                href="https://startech-ecom-app-navy.vercel.app/"
-                className="flex items-center font-bold"
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.4, ease: "easeIn" }}
+                className="bg-white text-black p-[5px] rounded-sm"
               >
-                <TbWorld />
-                View Project
-              </a>
-            </button>
+                <a
+                  href="https://startech-ecom-app-navy.vercel.app/"
+                  className="flex items-center font-bold"
+                  target="_blank"
+                >
+                  <TbWorld />
+                  View Project
+                </a>
+              </motion.button>
             </div>
           </motion.div>
         </div>
