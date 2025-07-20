@@ -1,8 +1,17 @@
 import React from "react";
+import { FaHtml5 } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io5";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
 
 function Resume() {
   return (
-    <div className="min-h-screen px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-5xl mx-auto py-10">
         <h1 className="text-2xl sm:text-4xl font-bold text-yellow-600">Resume</h1>
         <div className="mt-8 space-y-12">
@@ -66,15 +75,15 @@ function Resume() {
               <h1 className="text-base sm:text-lg font-bold text-yellow-600">FullStack Web Development</h1>
               <h1 className="text-base sm:text-lg font-bold mt-2">Tools</h1>
               <ul className="list-none list-inside grid grid-cols-2 sm:grid-cols-3 gap-2 font-light text-sm sm:text-base">
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">HTML</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">CSS</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">JavaScript</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">TailwindCSS</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">React</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">Node.js</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">Express.js</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">MongoDB</li>
-                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">TypeScript</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><FaHtml5 />HTML</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><IoLogoCss3 />CSS</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><SiJavascript />JavaScript</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><RiTailwindCssFill />TailwindCSS</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><FaReact />React</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><FaNodeJs />Node.js</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><SiExpress />Express.js</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><SiMongodb />MongoDB</li>
+                <li className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md flex items-center space-x-2"><SiTypescript />TypeScript</li>
               </ul>
             </div>
           </div>
