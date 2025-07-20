@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import { Element } from "react-scroll";
 
 function AboutMe() {
   return (
@@ -31,7 +32,8 @@ function AboutMe() {
       </section>
 
       {/* About Section */}
-      <section className="py-7 px-6 text-white xs:w-[90%] md:w-[80%] mx-auto bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">
+      <Element>
+        <section className="py-7 px-6 text-white xs:w-[90%] md:w-[80%] mx-auto bg-slate-400/20 border-[1px] border-slate-100/25 p-[10px] rounded-md">
         <h1 className="text-4xl font-bold" >About Me</h1>
         <p>
           I am a FullStack web devloper with my main focus on Javascript and
@@ -44,13 +46,16 @@ function AboutMe() {
               cybersecurity and freelancing. Adaptable, quick learner, and
               committed to delivering efficient solutions.
         </p>
-      </section>
-      <section>
+        </section>
+      </Element>
+      <Element name="projects">
         <Projects/>
-      </section>
-      <section>
+      </Element>
+      <Element name="resume">
+        <section>
         <Resume/>
-      </section>
+        </section>
+      </Element>
     </div>
   );
 }

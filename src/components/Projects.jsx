@@ -1,6 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TbWorld } from "react-icons/tb";
+import { FaHtml5 } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io5";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
+import { SiShadcnui } from "react-icons/si";
 
 function Projects() {
   return (
@@ -63,7 +73,7 @@ function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
-            className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
+            className="bg-slate-400/20 border-[1px] border-slate-100/25 xs:p-[10px] md:p-[30px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
           >
             <h1 className="text-yellow-600 font-bold">LajoSpaces</h1>
             <img
@@ -76,6 +86,23 @@ function Projects() {
               and book properties for sale or rent. Users are also allowed to
               put their own spaces or properties for sale to get good roommates
             </p>
+            <div className="flex space-x-2 flex-wrap justify-around gap-3">
+              <button className="bg-white text-black p-[5px] space-x-1 rounded-sm flex items-center font-bold">
+              <span className="flex items-center"><FaReact/> + <SiTypescript/></span> <span className="space-x-2">React + Typescript</span>
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <RiTailwindCssFill/> Tailwindcss
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiExpress/> Express
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiMongodb/> MongoDb
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiShadcnui/> Shadcnui
+            </button>
+            </div>
             <button className="bg-white text-black p-[5px] rounded-sm">
               <a
                 href="https://lajospaces.vercel.app/"
@@ -90,7 +117,7 @@ function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
-            className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
+            className="bg-slate-400/20 border-[1px] border-slate-100/25 xs:p-[10px] md:p-[30px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
           >
             <h1 className="text-yellow-600 font-bold">BookViaLajo</h1>
             <img
@@ -103,6 +130,20 @@ function Projects() {
               in which logged-in users can reserve and book available rooms in
               hotels through the application.
             </p>
+            <div className="flex space-x-2 flex-wrap justify-around gap-3-y-3">
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <FaReact/> React
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <RiTailwindCssFill/> Tailwindcss
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiExpress/> Express
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiMongodb/> MongoDb
+            </button>
+            </div>
             <button className="bg-white text-black p-[5px] rounded-sm">
               <a
                 href="https://bookvialajo.vercel.app/"
@@ -142,7 +183,7 @@ function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
-            className="bg-slate-400/20 border-[1px] border-slate-100/25 p-[5px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
+            className="bg-slate-400/20 border-[1px] border-slate-100/25 xs:p-[10px] md:p-[30px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
           >
             <h1 className="text-yellow-600 font-bold">StarTech</h1>
             <img
@@ -153,7 +194,22 @@ function Projects() {
             <p>
               StarTech is an e-commerce application based solely on the sales of shoes. Users can make orders, add to cart, and pay for them on the app, and it will be delivered to the designated location filled in by the user.
             </p>
-            <button className="bg-white text-black p-[5px] rounded-sm">
+            <div className="flex space-x-2 flex-wrap justify-around gap-3-y-3">
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <FaReact/> React
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <RiTailwindCssFill/> Tailwindcss
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiExpress/> Express
+            </button>
+            <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+              <SiMongodb/> MongoDB
+            </button>
+            </div>
+            <div>
+              <button className="bg-white text-black p-[5px] rounded-sm">
               <a
                 href="https://startech-ecom-app-navy.vercel.app/"
                 className="flex items-center font-bold"
@@ -162,6 +218,7 @@ function Projects() {
                 View Project
               </a>
             </button>
+            </div>
           </motion.div>
         </div>
       </div>

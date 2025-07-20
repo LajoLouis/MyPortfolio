@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
@@ -12,24 +13,24 @@ function Header() {
   const navLinks = (
     <>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="/" className="hover:text-yellow-400 border-b-2 border-yellow-400 pb-1 block py-2">
+        <RouterLink to="/" className="hover:text-yellow-400 border-b-2 border-yellow-400 pb-1 block py-2">
           HOME
-        </Link>
+        </RouterLink>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="/resume" className="hover:text-yellow-400 block py-2">
+        <Link to="resume" smooth={true} duration={500} className="hover:text-yellow-400 block py-2">
           RESUME
         </Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="/projects" className="hover:text-yellow-400 block py-2">
+        <Link to="projects" smooth={true} duration={500}  className="hover:text-yellow-400 block py-2">
           PROJECTS
         </Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.95 }}>
-        <Link to="/contact" className="hover:text-yellow-400 block py-2">
+        <RouterLink to="/contact" className="hover:text-yellow-400 block py-2">
           CONTACT
-        </Link>
+        </RouterLink>
       </motion.div>
     </>
   );
