@@ -128,6 +128,57 @@ function Projects() {
             transition={{ duration: 3 }}
             className="bg-slate-400/20 border-[1px] border-slate-100/25 xs:p-[10px] md:p-[30px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
           >
+            <h1 className="text-yellow-600 font-bold">QuickWaka</h1>
+            <img
+              src="/img/quickwaka.png"
+              alt=""
+              className="md:h-[300px] xs:h-[200px] w-[90%] mx-auto"
+            />
+            <p>
+              Quickwaka is an e-commerce store which thrives in the heart of Abakaliki, it is much like Jumia
+            </p>
+            <div className="flex space-x-2 flex-wrap justify-around gap-3">
+              <button className="bg-white text-black p-[5px] space-x-1 rounded-sm flex items-center font-bold">
+                <span className="flex items-center">
+                  <FaReact /> + <SiTypescript />
+                </span>{" "}
+                <span className="space-x-2">React + Typescript</span>
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <RiTailwindCssFill /> Tailwindcss
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiExpress /> Express
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiMongodb /> MongoDb
+              </button>
+              <button className="bg-white text-black p-[5px] rounded-sm flex items-center font-bold">
+                <SiShadcnui /> Shadcnui
+              </button>
+            </div>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.4, ease: "easeIn" }}
+              className="bg-white text-black p-[5px] rounded-sm"
+            >
+              <a
+                href="https://quickwaka.com/"
+                className="flex items-center font-bold"
+                target="_blank"
+              >
+                <TbWorld />
+                View Project
+              </a>
+            </motion.button>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3 }}
+            className="bg-slate-400/20 border-[1px] border-slate-100/25 xs:p-[10px] md:p-[30px] rounded-md space-y-4 my-[30px] xs:w-[95%] md:w-[70%] h-fit mx-auto"
+          >
             <h1 className="text-yellow-600 font-bold">BookViaLajo</h1>
             <img
               src="img/bookvialajo.jpg"
